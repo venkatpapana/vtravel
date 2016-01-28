@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>We Travel</title>
+  <link href="css/style.css" rel="stylesheet" media="all">  
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/ie.css" />
+<![endif]-->
+ </head>
+ <body class="home">
+ 	<!--header starts here-->
+	<header>
+		<div class="header_main">
+			<!--logo starts here-->
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.png" alt="logo"/>
+				</a>
+			</div>
+			<!--logo ends here-->
+			<!--header right section starts here-->
+			<div class="header_right_section">
+				<a href="#" class="how_it_works">
+					How it Works					
+				</a>
+				<a href="#" class="sign_in">
+					sign in
+				</a>
+			</div>
+			<!--header right section ends here-->
+			<div class="clear_both"></div>
+		</div>
+	</header>
+	<!--header ends here-->
+
+	<!--wrapper starts here-->
+	<section class="wrapper">
+		
+		<!--main starts here-->
+		<section class="main">
+
+			<!--middle starts here-->
+			<section class="middle" id="center-align">
+				<!--heading starts here-->
+				<h1 class="heading">
+					We are redefining how people in Europe approach traveling.
+					<span>Discover and enjoy the best trip of your life!</span>
+				</h1>
+				<!--heading ends here-->
+				<!--plan your trip box starts here-->
+				<!--<form method="post" name="plan_your_trip" id="plan_your_trip" action="getLowFareResults.php">!-->
+				<form method="post" name="plan_your_trip" id="plan_your_trip" action="results.php">
+				<div class="plan_your_trip">
+					<h1>Plan your trip</h1>
+					<div class="plan_your_trip_box">
+						<span class="bud">
+							<label>Budget:</label>
+							<input type="text" placeholder="200" class="input_txt budget" name="budget" id="budget">
+							<a class="budget_icon"><span></span></a>
+							<div class="clear_both"></div>
+						</span>
+                       
+						<span class="travellers">
+							<label>Travelers:</label>
+							<input type="text" placeholder="1" class="input_txt travelers" name="travellers">
+							<a class="travellers_icon"><span></span></a>
+							<div class="clear_both"></div>
+						</span>
+
+						 <span class="bud">
+							<label>Rooms</label>
+							<input type="text" placeholder="1" class="input_txt budget" name="rooms" id="rooms" list="cars">							 
+								<datalist id="cars">
+									<option selected value="1">1</option>
+									<option selected value="2">2</option>
+									<option selected value="3">3</option>
+									<option selected value="4">4</option>
+									<option selected value="5">5</option>
+								</datalist>
+							<a class="rooms_icon"><span></span></a>
+							<div class="clear_both"></div>
+						</span>
+						
+						
+						<span class="dates">
+							<label>From Date:</label>
+							<input type="text" placeholder="10.01.2014 - 17.01.2014" class="input_txt" id="from" name="from_date">
+							<div class="clear_both"></div>
+						</span>
+						
+						<span class="dates">
+							<label>To Date:</label>
+							<input type="text" placeholder="10.01.2014 - 17.01.2014" class="input_txt" id="to"  name="to_date">
+							<div class="clear_both"></div>
+						</span>
+						
+						<ul class="mylist"></ul>
+
+						<span class="from">
+							<div class="ui-widget">
+								<label>From:</label>
+								  <select class="combobox" id="from_place" name="from_place">	
+								    <option selected value="AMS">Amsterdam, Netherlands</option>
+								  </select>
+							</div>
+						</span>
+
+						<input type="submit" value="Discover" class="discover_btn" id="discover" name="discover">
+						<div class="clear_both"></div>
+
+						<div class="gray_bg">
+							<input type="radio" name="trip_type" id="one_way" value="one_way">
+							<label>one way</label>
+							<input type="radio" name="trip_type" id="return" value="return" checked="true">
+							<label>return</label>
+							<input type="checkbox" name="trip_type" id="prefer_directs" name="prefer_type" value="prefer_directs">
+							<label>prefer directs</label>
+							<div class="clear_both"></div>
+						</div>
+					</div>
+				</div>
+
+				<!--customize your journey ends here-->
+				<input type="button" value="More Options" class="more_options">
+				
+				<!--plan your trip box ends here-->
+				<!--customize your journey starts here-->
+				<div class="customize_journey">
+					<div class="customize_journey_main">
+						<div class="customize_journey_hd">
+							<h1>Customize your journey</h1>
+							<input type="submit" value="Search" class="search_btn">
+							<div class="clear_both"></div>
+						</div>
+						<div class="transport">
+                        <!--update_by_nirmaljeet-->
+							<label>Transport</label>
+							<input type="button" value="" class="air_plane" title="air plane">
+							<input type="button" value="" class="car" title="car">
+							<input type="button" value="" class="train" title="train">
+							<input type="button" value="" class="bus" title="bus">
+							<input type="button" value="" class="cruise" title="cruise">
+							<label class="stay">Stay</label>
+							<input type="button" value="" class="bed stay_section" title="bed">
+							<input type="button" value="" class="apartment stay_section" title="apartment">
+							<input type="button" value="" class="hotels stay_section" title="hotels">
+                             <!--update_by_nirmaljeet_end-->
+							<div class="clear_both"></div>
+							<div class="customize_input">
+								<span class="to">
+									<div class="ui-widget">
+										<label>To:</label>
+										  <select  name="ToName" class="combobox">
+											<option value="">Select one...</option>
+										  </select>
+									</div>
+									<div class="clear_both"></div>
+								</span>
+								<span class="travel_time">
+									<label>Travel Time:</label>
+									<div id="dd1" class="wrapper-dropdown-1" tabindex="1">
+										<span class="">less then 3 hours</span>
+										
+            <ul class="dropdown">
+              <li><a href="#">less then 5 hours</a></li>
+              <li><a href="#">less then 7 hours</a></li>
+              <li><a href="#">I don't care</a></li>
+            </ul>
+									</div>
+									<!--<a class="from_icon"><span></span></a>-->
+									<div class="clear_both"></div>
+								</span>
+								<span class="weather_section">
+									<label>Weather:</label>
+									<div id="dd" class="wrapper-dropdown-1" tabindex="1">
+										<span class="">I don't care</span>
+										
+            <ul class="dropdown">
+              <li><a href="#">I want sun</a></li>
+              <li><a href="#">I want snow</a></li>
+            </ul>
+									</div>
+									<div class="clear_both"></div>
+								</span>
+								<div class="clear_both"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</form>
+			
+</section> 
+<!--middle ends here-->
+</section> 
+<!--main ends here-->
+</section> 
+<!--wrapper ends here-->
+<!--footer starts here-->
+<footer id="sticky-footer"> 
+<div class="main"> 
+  <p>Copyright 2014 - We.Travel - All right reserved!</p>
+  <ul>
+    <li><a href="#">about us |</a></li>
+    <li><a href="#">credits |</a></li>
+    <li><a href="#">terms of use |</a></li>
+    <li><a href="#">contact</a></li>
+  </ul>
+  <div class="clear_both"></div>
+</div>
+</footer> 
+<!--footer ends here-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="js/jquery.anystretch.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript">
+ 			/*getting city names from JSON*/
+			 $.getJSON("js/city_names.json", function( data ) {
+				  var items = [];
+				  $.each( data, function( key, val ) {
+					$(".combobox").append("<option value='" + val + "'>" + val + "</option>");
+				  });
+			});
+			<!--update_by_nirmaljeet-->
+			/*ends*/
+			$( '.air_plane, .car, .train, .bus, .cruise, .bed, .apartment, .hotels' ).tooltip({
+				 position: { my: "center bottom", at: "center top",  }
+			});
+ 	</script>
+ </body>
+</html>

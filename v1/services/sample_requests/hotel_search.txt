@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<HotelSearchAvailabilityReq TargetBranch="P105217" xmlns="http://www.travelport.com/schema/hotel_v19_0">
+  <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v17_0">
+  </BillingPointOfSaleInfo>
+  <HotelLocation Location="LON" LocationType="City">
+  </HotelLocation>
+  <HotelSearchModifiers NumberOfAdults="1">
+  </HotelSearchModifiers>
+  <HotelStay>
+    <CheckinDate>2014-03-15</CheckinDate>
+    <CheckoutDate>2014-03-20</CheckoutDate>
+  </HotelStay>
+</HotelSearchAvailabilityReq>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-16"?>
+<universal:HotelCreateReservationRsp TraceId="6e997564-6337-4a6b-9890-68eba168fd6a" TransactionId="80FD81720A07643C195679FBE3A99107" ResponseTime="2827" xmlns:universal="http://www.travelport.com/schema/universal_v33_0" xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v33_0">
+  <universal:UniversalRecord LocatorCode="ZM3D35" Version="0" Status="Active">
+    <common_v33_0:BookingTraveler Key="MVhQY2tyamxnaEEwVzJhYg==" TravelerType="ADT" Age="40" DOB="1976-01-21" Gender="M" Nationality="US" ElStat="A">
+      <common_v33_0:BookingTravelerName Prefix="Mr" First="John" Last="Smith" />
+      <common_v33_0:DeliveryInfo>
+        <common_v33_0:ShippingAddress Key="le2c5MV9QvydyakS6kALDg==" ElStat="A">
+          <common_v33_0:AddressName>JOHNMR SMITH</common_v33_0:AddressName>
+          <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+          <common_v33_0:City>Madrid</common_v33_0:City>
+          <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+          <common_v33_0:ProviderReservationInfoRef Key="ScTnT6+2Tn2dTugzVWHM7Q==" />
+        </common_v33_0:ShippingAddress>
+        <common_v33_0:ProviderReservationInfoRef Key="ScTnT6+2Tn2dTugzVWHM7Q==" />
+      </common_v33_0:DeliveryInfo>
+      <common_v33_0:PhoneNumber Key="Opx3CTmJTa28oLBM3EzSlA==" Type="None" Location="DEN" CountryCode="1" Number="123456789" AreaCode="303" ElStat="A">
+        <common_v33_0:ProviderReservationInfoRef Key="ScTnT6+2Tn2dTugzVWHM7Q==" />
+      </common_v33_0:PhoneNumber>
+      <common_v33_0:Email Key="h+18QIkETe6ZHTNxcl5EAw==" EmailID="johnsmith@travelportuniversalapidemo.com" ElStat="A">
+        <common_v33_0:ProviderReservationInfoRef Key="ScTnT6+2Tn2dTugzVWHM7Q==" />
+      </common_v33_0:Email>
+      <common_v33_0:Address Key="3YJtetmWR6KtiAtEc7ZuVA==" ElStat="A">
+        <common_v33_0:AddressName>DemoSiteAddress</common_v33_0:AddressName>
+        <common_v33_0:Street>Via Augusta 59 5</common_v33_0:Street>
+        <common_v33_0:City>Madrid</common_v33_0:City>
+        <common_v33_0:State>IA</common_v33_0:State>
+        <common_v33_0:PostalCode>50156</common_v33_0:PostalCode>
+        <common_v33_0:Country>US</common_v33_0:Country>
+        <common_v33_0:ProviderReservationInfoRef Key="ScTnT6+2Tn2dTugzVWHM7Q==" />
+      </common_v33_0:Address>
+    </common_v33_0:BookingTraveler>
+    <common_v33_0:OSI Key="+7J2IzmcSCC/gLstGMcY9g==" Carrier="1G" Text="LW93402ARR29JAN CXL:01-D PRIOR TO 14-00H LOCAL TIME" ElStat="A" ProviderReservationInfoRef="ScTnT6+2Tn2dTugzVWHM7Q==" />
+    <universal:ProviderReservationInfo Key="ScTnT6+2Tn2dTugzVWHM7Q==" ProviderCode="1G" LocatorCode="9DZXX6" CreateDate="2016-01-27T02:50:45.977+00:00" ModifiedDate="2016-01-27T02:50:46.396+00:00" HostCreateDate="2016-01-27" OwningPCC="5S7T" />
+    <hotel:HotelReservation Status="HK" BookingConfirmation="236906" LocatorCode="00SCCRN4" CreateDate="2016-01-27T02:50:45.972+00:00" ModifiedDate="2016-01-27T02:50:46.396+00:00" ProviderReservationInfoRef="ScTnT6+2Tn2dTugzVWHM7Q==" TravelOrder="1">
+      <common_v33_0:BookingTravelerRef Key="MVhQY2tyamxnaEEwVzJhYg==" />
+      <common_v33_0:ReservationName>
+        <common_v33_0:BookingTravelerRef Key="MVhQY2tyamxnaEEwVzJhYg==" />
+      </common_v33_0:ReservationName>
+      <hotel:HotelProperty HotelChain="LW" HotelCode="93402" HotelLocation="LON" Name="HOTEL CAFE ROYAL">
+        <hotel:PropertyAddress>
+          <hotel:Address>68 REGENT STREET </hotel:Address>
+          <hotel:Address>LONDON W1B 4DY GB </hotel:Address>
+        </hotel:PropertyAddress>
+        <common_v33_0:PhoneNumber Type="Hotel" Number="44-20-74063333" />
+        <common_v33_0:PhoneNumber Type="Fax" Number="44-20-74063366" />
+      </hotel:HotelProperty>
+      <hotel:HotelRateDetail RatePlanType="L04DZZZ" Total="GBP820.00" RateGuaranteed="true">
+        <hotel:RoomRateDescription Name="Addl Rate Info">
+          <hotel:Text>The Rate specified is an approximate amount</hotel:Text>
+          <hotel:Text>There is a Rate change during the stay period</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:RoomRateDescription Name="Total Includes">
+          <hotel:Text>Total includes taxes, surcharges, fees and any extra options charges when applicable and specified in the request.</hotel:Text>
+        </hotel:RoomRateDescription>
+        <hotel:HotelRateByDate EffectiveDate="2016-01-29" ExpireDate="2016-01-30" Base="GBP420.00" />
+        <hotel:HotelRateByDate EffectiveDate="2016-01-30" ExpireDate="2016-01-31" Base="GBP400.00" />
+        <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2016-01-28T14:00:00.000+00:00" />
+        <hotel:GuaranteeInfo GuaranteeType="Guarantee" />
+      </hotel:HotelRateDetail>
+      <hotel:HotelStay>
+        <hotel:CheckinDate>2016-01-29</hotel:CheckinDate>
+        <hotel:CheckoutDate>2016-01-31</hotel:CheckoutDate>
+      </hotel:HotelStay>
+      <common_v33_0:Guarantee Type="Guarantee" Key="GXsLE4c5ROeyfSbQUVcWCw==" Reusable="false" ElStat="A">
+        <common_v33_0:CreditCard Type="VI" Number="************1111" ExpDate="2016-12" />
+      </common_v33_0:Guarantee>
+      <common_v33_0:BookingSource Type="IataNumber" Code="99999992" />
+      <hotel:GuestInformation NumberOfRooms="1">
+        <hotel:NumberOfAdults>1</hotel:NumberOfAdults>
+      </hotel:GuestInformation>
+    </hotel:HotelReservation>
+    <common_v33_0:AgencyInfo>
+      <common_v33_0:AgentAction ActionType="Created" AgentCode="UAPI2309471039-E76846FC" BranchCode="P7030029" AgencyCode="S7030022" EventTime="2016-01-27T02:50:43.727+00:00" />
+    </common_v33_0:AgencyInfo>
+  </universal:UniversalRecord>
+</universal:HotelCreateReservationRsp>

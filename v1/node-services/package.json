@@ -1,0 +1,16 @@
+{
+  "name": "node-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Venkat",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^11.0.0",
+    "http": "0.0.0",
+    "mongodb": "^2.0.46"
+  }
+}

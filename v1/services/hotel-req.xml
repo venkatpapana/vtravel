@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+ <HotelDetailsReq xmlns="http://www.travelport.com/schema/hotel_v31_0" TraceId="81602a02-3dcf-425a-9fd3-23f569982a61" AuthorizedBy="Travelport" TargetBranch="P7030029" ReturnMediaLinks="true">
+  <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v31_0" OriginApplication="uAPI" />
+  <HotelProperty HotelCode="02890" HotelChain="YX" />
+  <HotelDetailsModifiers NumberOfAdults="1" RateRuleDetail="Complete">
+    <PermittedProviders xmlns="http://www.travelport.com/schema/common_v31_0">
+      <Provider Code="1G" />
+    </PermittedProviders>
+    <HotelStay>
+      <CheckinDate>2015-08-21</CheckinDate>
+      <CheckoutDate>2015-08-23</CheckoutDate>
+    </HotelStay>
+    <NumberOfChildren Count="0" />
+  </HotelDetailsModifiers>
+</HotelDetailsReq>
+</soapenv:Body>
+</soapenv:Envelope>

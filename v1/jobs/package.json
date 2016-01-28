@@ -1,0 +1,16 @@
+{
+  "name": "jobs",
+  "version": "1.0.0",
+  "description": "backend jobs to cache search results",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Venkat",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.0",
+    "mongodb": "^2.0.46",
+    "querystring": "^0.2.0"
+  }
+}

@@ -1,0 +1,1556 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>We Travel</title>
+  <link href="css/style.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+  <!--[if IE 10]>
+	<link rel="stylesheet" type="text/css" href="css/ie.css" />
+<![endif]-->
+<!--[if IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie.css" />
+<![endif]-->
+ </head>
+ <body class="results">
+	<!--header starts here-->
+	<header>
+	<div class="header_main">
+		<!--logo starts here-->
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/logo.png" alt="logo"/>
+			</a>
+		</div>
+		<!--logo ends here-->
+		<!--header right section starts here-->
+		<div class="header_right_section">
+			<a href="#" class="how_it_works">
+				How it Works					
+			</a>
+			<a href="#" class="sign_in">
+				sign in
+			</a>
+		</div>
+		<!--header right section ends here-->
+		<div class="clear_both"></div>
+	</div>
+	</header>
+	<!--header ends here-->
+
+	<!--wrapper starts here-->
+	<section class="wrapper results">
+		
+		<!--main starts here-->
+		<section class="main results_page">
+			
+			<!--middle starts here-->
+			<section class="middle">
+				<!--plan your trip box starts here-->
+				<div class="plan_your_trip">
+					<div class="plan_your_trip_box">
+					<!--results width starts here-->
+					<div class="results_inner_widths">
+						<span class="bud">
+							<label>Budget:</label>
+							<input type="text" placeholder="1000" class="input_txt budget">
+							<a class="budget_icon"><span></span></a>
+							<div class="clear_both"></div>
+						</span>
+
+						<span class="travellers">
+							<label>Travelers:</label>
+							<input type="text" placeholder="5" class="input_txt travelers">
+							<a class="travellers_icon"><span></span></a>
+							<div class="clear_both"></div>
+						</span>
+
+						<span class="dates">
+							<label>From Date:</label>
+							<input type="text" placeholder="10.01.2014 - 17.01.2014" class="input_txt" id="from">
+							<div class="clear_both"></div>
+						</span>
+						
+						<span class="dates">
+							<label>To Date:</label>
+							<input type="text" placeholder="10.01.2014 - 17.01.2014" class="input_txt" id="to">
+							<div class="clear_both"></div>
+						</span>
+						
+						<ul class="mylist"></ul>
+
+						<span class="from">
+							<div class="ui-widget">
+								<label>From:</label>
+								  <select class="combobox">	
+								    <option value="">Select one...</option>
+								  </select>
+							</div>
+						</span>
+
+						<div class="clear_both"></div>
+						<!--results width ends here-->
+						</div>
+						<div class="gray_bg">
+							<!--results width starts here-->
+							<div class="inner_gray">
+								<input type="radio" name="trip_type" id="one_way">
+								<label>one way</label>
+								<input type="radio" name="trip_type" id="return" checked="true">
+								<label>return</label>
+								<input type="checkbox" name="trip_type" id="prefer_directs">
+								<label>prefer directs</label>
+								<div class="clear_both"></div>
+							<!--results width ends here-->
+							</div>
+						</div>
+					</div>
+					<input type="button" value="" class="expand_btn">
+				</div>
+				<!--plan your trip box ends here-->
+				<!--customize your journey starts here-->
+				<div class="customize_journey">
+					<div class="customize_journey_main">
+						<!--results inner width starts here-->
+						<div class="results_inner_widths">
+						<div class="transport">
+							<label>Transport</label>
+							<input type="button" value="" class="air_plane" title="Plane">
+							<input type="button" value="" class="car" title="Car">
+							<input type="button" value="" class="train" title="Train">
+							<input type="button" value="" class="bus" title="Bus">
+							<input type="button" value="" class="cruise" title="Cruise">
+							<label class="stay">Stay</label>
+							<input type="button" value="" class="bed stay_section" title="Bed">
+							<input type="button" value="" class="apartment stay_section" title="Apartment">
+							<input type="button" value="" class="hotels stay_section" title="Hotel">
+							<div class="clear_both"></div>
+						</div>
+						</div>
+						<!--results inner width ends here-->
+							<div class="customize_input">
+							<!--results inner width starts here-->
+							<div class="results_inner_widths">
+								<span class="to">
+									<div class="ui-widget">
+										<label>To:</label>
+										  <select class="combobox">
+											<option value="">Select one...</option>
+										  </select>
+									</div>
+									<div class="clear_both"></div>
+								</span>
+								<span class="travel_time">
+									<label>Travel Time:</label>
+									<div id="dd1" class="wrapper-dropdown-1" tabindex="1">
+										<span class="">less then 3 hours</span>
+										<ul class="dropdown">
+											<li><a href="#">less then 5 hours</a></li>
+											<li><a href="#">less then 7 hours</a></li>
+											<li><a href="#">I don't care</a></li>
+										</ul>
+									</div>
+									<!--<a class="from_icon"><span></span></a>-->
+									<div class="clear_both"></div>
+								</span>
+								<span class="weather_section">
+									<label>Weather:</label>
+									<div id="dd" class="wrapper-dropdown-1" tabindex="1">
+										<span class="">I don't care</span>
+										<ul class="dropdown">
+											<li><a href="#">I want sun</a></li>
+											<li><a href="#">I want snow</a></li>
+										</ul>
+									</div>
+									<div class="clear_both"></div>
+								</span>
+								<input type="button" value="Search" class="search_btn">
+								<div class="clear_both"></div>
+							</div>
+							</div>
+							<!--results inner width ends here-->
+						</div>
+					</div>
+				</div>
+				<!--customize your journey ends here-->
+<div class="bookit_container">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="city-box book-it">
+								<img src="images/backgrounds/background3.jpg" class="city-bg-image" />
+								<div class="city_bg">
+									<div class="city_name left_pad city_left">
+										<p class="city_details">
+											<span class="bubble_icon"></span>
+											<span class="ciy_name">Paris, 
+												<span class="coutry_name">France</span>
+											</span>
+											<span class="results_weather_icon"></span>
+											<span class="temperature">20&deg;C</span>
+											<span class="car_icon"></span>
+											<span class="cost">50&#128;</span>
+											<span class="plane_icon"></span>
+											<span class="cost">170&#128;</span>
+											<span class="building_icon"></span>
+											<span class="cost">100&#128;</span>
+											<span class="time_icon"></span>
+											<span class="cost">6h</span>
+										</p>
+									</div>
+									<div class="city_right">
+										<p>320&#128;</p>
+									</div>
+									<div class="clear_both"></div>
+								</div>
+								<div class="city_btm">
+									<div class="social_info left_pad">
+										<div class="social_left_side">
+											<div class="social_left_info">
+												<span class="fb_icon"></span>
+												<p>Sorin Pavel, Bogdan Tanase, Simone and Andrei Trusca live here</p>
+											</div>
+											<div class="fb_imgs">
+												<img src="images/fb_imgs.jpg" alt="fb images"/>
+												<img src="images/fb_imgs.jpg" alt="fb images"/>
+												<img src="images/fb_imgs.jpg" alt="fb images"/>
+												<img src="images/fb_imgs.jpg" alt="fb images"/>
+												<img src="images/fb_imgs.jpg" alt="fb images"/>
+												<img src="images/fb_imgs.jpg" alt="fb images"/>
+											</div>
+											<div class="clear_both"></div>
+										</div>
+										<div class="clear_both"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div id="wizard" class="">
+					  <ul class="steps">
+					    <li>
+					    	<a href="#" class="home">
+					          <span class="step-title">Book it in 3 simple steps</span>
+					          <span class="step-arrow"></span>
+					      	</a>
+					    </li>
+
+					    <li>
+					    	<a href="#step-1" class="selected">
+					          <span class="step-number">1</span>
+					          <span class="step-title">How to get there</span>
+					          <span class="step-arrow"></span>
+					      	</a>
+					    </li>
+
+					    <li>
+					    	<a href="#step-2" class="next">
+					          <span class="step-number">2</span>
+					          <span class="step-title">Where to stay</span>
+					          <span class="step-arrow"></span>
+					      	</a>
+					    </li>
+
+					    <li>
+					    	<a href="#step-3">
+					          <span class="step-number">3</span>
+					          <span class="step-title">Check-Out</span>
+					      	</a>
+					    </li>					    
+					  </ul>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="wizard-steps">
+						<div><a href="#"><span>4</span> Confirmation</a></div>
+						<div class="completed-step"><a href="#step-one"><span>1</span> Account Info</a></div>
+						<div class="active-step"><a href="#step-two"><span>2</span> Contact Info</a></div>
+						<div><a href="#"><span>3</span> Security Question</a></div>					  
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="transport-options">
+						<div class="transport-menu">
+							<ul>
+								<li><a href="#flight" class="flight active">Flight</a></li>
+								<li><a href="#train" class="train">Train</a></li>
+								<li><a href="#bus" class="bus">Bus</a></li>
+								<li><a href="#ferry" class="ferry">Ferry</a></li>
+							</ul>
+						</div>
+						<!--Flight Div -->
+						<div class="transport-details" id="flight">
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips" href="#">i<span>Tooltip</span></a></p></div>
+								<!--info bubble starts here-->
+								<!--All content inside the popup-info div will be shown in the bubble-->
+								<div class="popup-info">
+									<img src="images/info-bubble-arrow.png" class="arrow" />
+									<div class="info">
+										<p class="pull-left"><span>OUTBOUND:</span> Change of plane required</p>
+										<p class="pull-right">Time between flights : <span>6h50m</span></p>
+									</div>
+									<div class="row-transport">
+										<div class="col-details">
+											<div class="span-1">										
+												<div class="logo-1">
+													<img src="images/logo-big2.png" />
+												</div>
+											</div>
+											<div class="span-1">
+												<div class="transport-icon flight-up"></div>
+											</div>
+											<div class="span-2">
+												<div class="time-address">
+													<p class="time">Friday 18, 21:25</p>
+													<p class="address">Schipol <span>AMS</span></p>
+												</div>
+											</div>
+											<div class="span-1">
+												<div class="transport-icon flight-down"></div>
+											</div>
+											<div class="span-2">
+												<div class="time-address">
+													<p class="time">Friday 18, 21:25</p>
+													<p class="address">Schipol <span>AMS</span></p>
+												</div>
+											</div>
+											<div class="span-1">
+												<div class="transport-icon time"></div>
+											</div>
+											<div class="span-1">
+												<p class="duration">2h 5m</p>
+											</div>
+										</div>
+										<div class="col-price">
+											<p>290€</p>
+										</div>
+									</div>
+									<div class="info">
+										<p class="pull-left"><span>OUTBOUND:</span> Change of plane required</p>
+										<p class="pull-right">Time between flights : <span>6h50m</span></p>
+									</div>
+									<div class="row-transport">
+										<div class="col-details">
+											<div class="span-1">										
+												<div class="logo-1">
+													<img src="images/logo-big2.png" />
+												</div>
+											</div>
+											<div class="span-1">
+												<div class="transport-icon flight-up"></div>
+											</div>
+											<div class="span-2">
+												<div class="time-address">
+													<p class="time">Friday 18, 21:25</p>
+													<p class="address">Schipol <span>AMS</span></p>
+												</div>
+											</div>
+											<div class="span-1">
+												<div class="transport-icon flight-down"></div>
+											</div>
+											<div class="span-2">
+												<div class="time-address">
+													<p class="time">Friday 18, 21:25</p>
+													<p class="address">Schipol <span>AMS</span></p>
+												</div>
+											</div>
+											<div class="span-1">
+												<div class="transport-icon time"></div>
+											</div>
+											<div class="span-1">
+												<p class="duration">2h 5m</p>
+											</div>
+										</div>
+										<div class="col-price">
+											<p>290€</p>
+										</div>
+									</div>
+								</div>
+								<!--info bubble ends here-->				
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>								
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-2">
+											<img src="images/logo-big.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>								
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-2">
+											<img src="images/logo-small.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips" href="#">i<span>Tooltip</span></a></p></div>
+							</div>
+
+							<div class="row-transport">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+							</div>
+
+							<div class="row-transport">
+								<div class="col-details">
+									<div class="span-1">										
+										<div class="logo-2">
+											<img src="images/logo-big2.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips top" href="#">i<span>Tooltip</span></a></p></div>
+							</div>
+							
+							<div class="more-destinations"><p>Show More Options</p></div>
+						</div>
+
+						<!--train Div -->
+						<div class="transport-details" id="train">
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon train"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon train"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips" href="#">i<span>Tooltip</span></a></p></div>						
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>								
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-2">
+											<img src="images/logo-big.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>								
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-2">
+											<img src="images/logo-small.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips" href="#">i<span>Tooltip</span></a></p></div>
+							</div>
+
+							<div class="row-transport">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+							</div>
+
+							<div class="row-transport">
+								<div class="col-details">
+									<div class="span-1">										
+										<div class="logo-2">
+											<img src="images/logo-big2.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips top" href="#">i<span>Tooltip</span></a></p></div>
+							</div>
+							
+							<div class="more-destinations"><p>Show More Options</p></div>
+						</div>
+
+						<!--bus Div -->
+						<div class="transport-details" id="bus">
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon bus"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon bus"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips" href="#">i<span>Tooltip</span></a></p></div>						
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>								
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-2">
+											<img src="images/logo-big.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>								
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-2">
+											<img src="images/logo-small.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips" href="#">i<span>Tooltip</span></a></p></div>
+							</div>
+
+							<div class="row-transport">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+							</div>
+
+							<div class="row-transport">
+								<div class="col-details">
+									<div class="span-1">										
+										<div class="logo-2">
+											<img src="images/logo-big2.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips top" href="#">i<span>Tooltip</span></a></p></div>
+							</div>
+							
+							<div class="more-destinations"><p>Show More Options</p></div>
+						</div>
+
+						<!--ferry Div -->
+						<div class="transport-details" id="ferry">
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon ship"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon ship"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips" href="#">i<span>Tooltip</span></a></p></div>						
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>								
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-2">
+											<img src="images/logo-big.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>								
+							</div>
+
+							<div class="row-transport two-way">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-2">
+											<img src="images/logo-small.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small2.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips" href="#">i<span>Tooltip</span></a></p></div>
+							</div>
+
+							<div class="row-transport">
+								<div class="col-details">
+									<div class="span-1">
+										<div class="logo-1">
+											<img src="images/logo-big.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+							</div>
+
+							<div class="row-transport">
+								<div class="col-details">
+									<div class="span-1">										
+										<div class="logo-2">
+											<img src="images/logo-big2.png" />
+										</div>
+										<div class="logo-2">
+											<img src="images/logo-small.png" />
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-up"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon flight-down"></div>
+									</div>
+									<div class="span-2">
+										<div class="time-address">
+											<p class="time">Friday 18, 21:25</p>
+											<p class="address">Schipol <span>AMS</span></p>
+										</div>
+									</div>
+									<div class="span-1">
+										<div class="transport-icon time"></div>
+									</div>
+									<div class="span-1">
+										<p class="duration">2h 5m</p>
+									</div>
+								</div>
+								<div class="col-price">
+									<p>290€</p>
+								</div>
+								<div class="more-info"><p><a class="tooltips top" href="#">i<span>Tooltip</span></a></p></div>
+							</div>
+							
+							<div class="more-destinations"><p>Show More Options</p></div>
+						</div>
+					</div>
+				</div>
+</div>		
+			</section>
+			<!--middle ends here-->
+		</section>
+		<!--main ends here-->			
+	</section>
+	<!--wrapper ends here-->
+	<!--footer starts here-->
+	<footer>
+		<div class="main">
+			<p>Copyright 2014 - We.Travel - All right reserved!</p>
+			<ul>
+				<li><a href="#">about us  |</a></li>
+				<li><a href="#">credits  |</a></li>
+				<li><a href="#">terms of use  |</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+			<div class="clear_both"></div>
+		</div>
+	</footer>
+	<!--footer ends here-->
+	<div id="info-bubble">
+		<img src="images/info-bubble-arrow.png" class="arrow" />
+		<div id="bubble-content"></div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.js"></script> 
+	<script type="text/javascript" src="js/jquery.anystretch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.qtip.js"></script> 
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript">
+	/*getting city names from JSON*/
+			 $.getJSON("js/city_names.json", function( data ) {
+				  var items = [];
+				  $.each( data, function( key, val ) {
+					$(".combobox").append("<option value='" + val + "'>" + val + "</option>");
+				  });
+			});
+	/*ends*/
+	</script>
+ </body>
+</html>

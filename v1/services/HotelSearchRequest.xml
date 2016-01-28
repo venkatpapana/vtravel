@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+<HotelSearchAvailabilityReq xmlns="http://www.travelport.com/schema/hotel_v31_0" TraceId="30d5a4e9-6317-4049-9253-1a0d3defd13e" AuthorizedBy="Travelport" TargetBranch="P7030029">
+  <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v31_0" OriginApplication="uAPI" />
+  <HotelSearchLocation>
+    <HotelLocation Location="CDG" />
+         
+  </HotelSearchLocation>
+  <HotelSearchModifiers NumberOfAdults="1" NumberOfRooms="1" AvailableHotelsOnly="true" MaxWait="16000" AggregateResults="true" PreferredCurrency="EUR">
+    <PermittedSuppliers>
+      <Supplier Name="AG" />
+      <Supplier Name="EA" />
+      <Supplier Name="HB" />
+      <Supplier Name="HW" />
+      <Supplier Name="HZ" />
+      <Supplier Name="4U" />
+      <Supplier Name="TO" />
+    </PermittedSuppliers>
+  </HotelSearchModifiers>
+  <HotelStay>
+    <CheckinDate>2015-07-03</CheckinDate>
+    <CheckoutDate>2015-07-05</CheckoutDate>
+  </HotelStay>
+</HotelSearchAvailabilityReq>
+</soapenv:Body>
+</soapenv:Envelope>
