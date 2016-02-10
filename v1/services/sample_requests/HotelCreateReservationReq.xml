@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-16"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
 <HotelCreateReservationReq xmlns="http://www.travelport.com/schema/universal_v33_0" TraceId="6e997564-6337-4a6b-9890-68eba168fd6a" AuthorizedBy="Chetan" TargetBranch="P7030029" ProviderCode="1G" UserAcceptance="true">
   <BillingPointOfSaleInfo xmlns="http://www.travelport.com/schema/common_v33_0" OriginApplication="uAPI" />
   <BookingTraveler xmlns="http://www.travelport.com/schema/common_v33_0" Key="MVhQY2tyamxnaEEwVzJhYg==" TravelerType="ADT" Age="40" DOB="1976-01-21" Gender="M" Nationality="US">
@@ -24,8 +26,8 @@
   <HotelRateDetail xmlns="http://www.travelport.com/schema/hotel_v33_0" RatePlanType="L04DZZZ" />
   <HotelProperty xmlns="http://www.travelport.com/schema/hotel_v33_0" HotelCode="93402" HotelChain="LW" />
   <HotelStay xmlns="http://www.travelport.com/schema/hotel_v33_0">
-    <CheckinDate>2016-01-29</CheckinDate>
-    <CheckoutDate>2016-01-31</CheckoutDate>
+    <CheckinDate>2016-04-29</CheckinDate>
+    <CheckoutDate>2016-04-30</CheckoutDate>
   </HotelStay>
   <Guarantee xmlns="http://www.travelport.com/schema/common_v33_0" Type="Guarantee">
     <CreditCard Type="VI" Number="4444333322221111" ExpDate="2016-12" CVV="123" />
@@ -34,3 +36,5 @@
     <NumberOfAdults>1</NumberOfAdults>
   </GuestInformation>
 </HotelCreateReservationReq>
+</soapenv:Body>
+</soapenv:Envelope>

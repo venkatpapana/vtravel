@@ -3,7 +3,7 @@ require_once(dirname(__FILE__).'/config.php');
 require_once('nusoap/lib/nusoap.php');
 
 
-function getHotelReservationJson($location, $num_adults, $checkin_date, $checkout_date, $num_rooms=1) {
+function getHotelReservationJson($location='', $num_adults='', $checkin_date='', $checkout_date='', $num_rooms=1) {
 
 	$message = file_get_contents(dirname(__FILE__)."/sample_requests/HotelCreateReservationReq.xml");
 
@@ -14,10 +14,13 @@ function getHotelReservationJson($location, $num_adults, $checkin_date, $checkou
 	$message = str_replace("{CHECKIN_DATE}", $checkin_date, $message);
 	$message = str_replace("{CHECKOUT_DATE}", $checkout_date, $message);
 	$message = str_replace("{NUM_ROOMS}", $num_rooms, $message);
-*/	
+*/
 	$client = new nusoap_client(HOTEL_ENDPOINT, false);
+	$client->timeout = 5;
+	$client->response_timeout = 5;
 	$client->setCredentials(USERNAME, PASSWORD);
 	$result=$client->send($message, HOTEL_ENDPOINT);
-
+	echo $err = $client->getError();
+	file_put_contents(dirname(__FILE__)."/tests/debug.getHotelReservationJson.log", $client->debug_str);
 	return json_encode($result);
 }
